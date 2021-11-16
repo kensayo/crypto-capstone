@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import Main from './components/main';
+import {
+  BrowserRouter as Router, Switch, Route, NavLink,
+} from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMicrophone, faAngleLeft, faWrench } from '@fortawesome/free-solid-svg-icons';
+import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Router>
+        <nav className="d-flex justify-content-between flex-row">
+          <NavLink exact to="/">
+            <FontAwesomeIcon icon={faAngleLeft} />
+          </NavLink>  
+          <span>Crypto Capstone</span>
+          <div>
+          <FontAwesomeIcon icon={faMicrophone} />  
+            <FontAwesomeIcon icon={faWrench} />
+          </div>
+        </nav>
+      <Switch>
+        <Route path="/">
+          <Main />
+        </Route>
+      </Switch>
+      </Router>
     </div>
   );
 }
