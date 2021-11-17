@@ -1,0 +1,23 @@
+.button {
+  position: relative;
+  width: 50%;
+  height: 0;
+  padding-bottom: 20%;
+}
+
+.red {
+  background: red;
+}
+
+.blue {
+  background: blue;
+}
+/*
+.button:nth-child(odd) {
+  background: blue;
+}
+
+.button:nth-child(even) {
+  background: red;
+}
+*/

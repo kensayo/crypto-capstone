@@ -1,31 +1,34 @@
-import {
-  BrowserRouter as Router, Switch, Route, NavLink,
-} from 'react-router-dom';
+import { React, useEffect } from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMicrophone, faAngleLeft, faWrench } from '@fortawesome/free-solid-svg-icons';
-import Main from './components/main';
+import { getCoins } from './redux/coins/coins';
+import Coin from './components/coin';
+import CoinDetail from './components/coinDetail';
 import 'bootstrap/dist/css/bootstrap.css';
 
 function App() {
+  const dispatchCoins = useDispatch();
+  useEffect(() => {
+    dispatchCoins(getCoins());
+  }, []);
   return (
     <div>
-      <Router>
-        <nav className="d-flex justify-content-between flex-row">
-          <NavLink exact to="/">
-            <FontAwesomeIcon icon={faAngleLeft} />
-          </NavLink>
-          <span>Crypto Capstone</span>
-          <div>
-            <FontAwesomeIcon icon={faMicrophone} />
-            <FontAwesomeIcon icon={faWrench} />
-          </div>
-        </nav>
-        <Switch>
-          <Route path="/">
-            <Main />
-          </Route>
-        </Switch>
-      </Router>
+      <nav className="d-flex justify-content-between flex-row">
+        <Link exact to="/">
+          <FontAwesomeIcon icon={faAngleLeft} />
+        </Link>
+        <span>Crypto Capstone</span>
+        <div>
+          <FontAwesomeIcon icon={faMicrophone} />
+          <FontAwesomeIcon icon={faWrench} />
+        </div>
+      </nav>
+      <Routes>
+        <Route path="/" element={<Coin />} />
+        <Route path="/detail" element={<CoinDetail />} />
+      </Routes>
     </div>
   );
 }
