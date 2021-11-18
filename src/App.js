@@ -14,15 +14,15 @@ function App() {
     dispatchCoins(getCoins());
   }, []);
   return (
-    <div>
-      <nav className="d-flex justify-content-between flex-row">
+    <div className="cryptoContainer mx-auto">
+      <nav className="d-flex align-items-center position-relative flex-row">
         <Link exact to="/">
-          <FontAwesomeIcon icon={faAngleLeft} />
+          <FontAwesomeIcon className="arrowicon m-2" icon={faAngleLeft} />
         </Link>
-        <span>Crypto Capstone</span>
-        <div>
-          <FontAwesomeIcon icon={faMicrophone} />
-          <FontAwesomeIcon icon={faWrench} />
+        <h1 className="rs-f mx-auto">Crypto Capstone</h1>
+        <div className="position-absolute right">
+          <FontAwesomeIcon className="arrowicon m-2" icon={faMicrophone} />
+          <FontAwesomeIcon className="arrowicon m-2" icon={faWrench} />
         </div>
       </nav>
       <Routes>

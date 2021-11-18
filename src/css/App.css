@@ -1,3 +1,32 @@
 body {
-    max-width: 1024px;
+  background: rgb(245, 91, 181);
+}
+
+.cryptoContainer {
+  color: white;
+}
+
+@media screen and (min-width: 1024px) {
+  .cryptoContainer {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 7068px) {
+  .cryptoContainer {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 16px;
+  }
+}
+
+nav {
+  height: auto;
+  background: #ec4c8a;
+}
+
+.right {
+  right: 0;
 }

@@ -1,23 +1,41 @@
 .button {
   position: relative;
-  width: 50%;
+  width: 100%;
   height: 0;
-  padding-bottom: 20%;
+  padding-bottom: 100%;
+  border: none;
+}
+
+.coinlogo {
+  left: 0;
+  top: 0;
+  width: 60%;
 }
 
 .red {
-  background: red;
+  background: #dd4882;
 }
 
 .blue {
-  background: blue;
-}
-/*
-.button:nth-child(odd) {
-  background: blue;
+  background: #d04479;
 }
 
-.button:nth-child(even) {
-  background: red;
+.arrowicon {
+  right: 0;
+  top: 0;
+  font-size: 1.5rem !important;
+  color: white;
 }
-*/
+
+.info {
+  bottom: 0;
+  right: 0;
+}
+
+.infoCoin:nth-child(odd) {
+  background: #dd4882;
+}
+
+.infoCoin:nth-child(even) {
+  background: #d04479;
+}
