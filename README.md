@@ -17,10 +17,11 @@
     - CSS
     - Bootstrap
     - Linters
+    - Jest
   
 ## 🌐 Live Preview
 
-> [Space Travellers Hub](https://space-travellers.netlify.app/)
+> [Crypto Capstone](https://amazing-boyd-3a6ff9.netlify.app/)
 
 ## 🚩 Getting Started
 
@@ -31,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 * Make sure that **Node JS** is installed in your computer (try to run _npm -v_ from your prompt), if not you can install it from [here.](https://nodejs.org/en/download/)
 
 
-* [Download](https://github.com/peterdgreat/Space-Travellers-Hub/archive/refs/heads/development.zip) and unzip **or** [clone this repository](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
+* [Download](https://github.com/kensayo/crypto-capstone/archive/refs/heads/dev.zip) and unzip **or** [clone this repository](https://docs.github.com/es/github/creating-cloning-and-archiving-repositories/cloning-a-repository)
 
 
 ### 👨🏻‍🔧 Setup
@@ -45,7 +46,7 @@ To get a local copy up and running follow these simple example steps.
 
 - You can go to http://127.0.0.1:3000/ to use the app locally
 
-## Authors
+## Author
 
 ### 👨🏻‍💻 Kenny Ortega
 
@@ -53,13 +54,6 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@kensayo](https://twitter.com/kensayo)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/kennyortega/)
   
-### 👨🏿‍💻 Ajayi Peter
-
-- GitHub: [@githubhandle](https://github.com/peterdgreat)
-- Twitter: [@twitterhandle](https://twitter.com/dev_Peter_O)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/ajayi-peter-4391ab1b5)
-
-
 
 ### 🤝🏻 Contributions and issues are welcome!
 
