@@ -25,6 +25,8 @@
 
 ## 📹 Video Presentation
 
+> [Presentation](https://www.loom.com/share/61d6779794c447f7929aef19fd3f6314)
+
 ## 🚩 Getting Started
 
 To get a local copy up and running follow these simple example steps.
