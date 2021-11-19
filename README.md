@@ -23,6 +23,8 @@
 
 > [Crypto Capstone](https://amazing-boyd-3a6ff9.netlify.app/)
 
+## 📹 Video Presentation
+
 ## 🚩 Getting Started
 
 To get a local copy up and running follow these simple example steps.
