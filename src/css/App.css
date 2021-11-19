@@ -3,6 +3,8 @@ body {
 }
 
 .cryptoContainer {
+  max-width: 1024px;
+  min-width: 560px;
   color: white;
 }
 

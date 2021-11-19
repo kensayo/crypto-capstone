@@ -1,7 +1,10 @@
-const formatter = new Intl.NumberFormat('en-US', {
-  style: 'currency',
-  currency: 'USD',
-  minimumFractionDigits: '8',
-});
+function formatCoin(digits) {
+  const formatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: digits,
+  });
+  return formatter;
+}
 
-export default formatter;
+export default formatCoin;

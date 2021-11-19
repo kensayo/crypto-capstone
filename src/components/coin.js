@@ -2,7 +2,7 @@ import { React } from 'react';
 import { useSelector } from 'react-redux';
 import CoinList from './coinList';
 import '../css/coin.css';
-import formatter from '../formatter';
+import formatCoin from '../formatter';
 
 export default function Coin() {
   const coin = [];
@@ -16,7 +16,7 @@ export default function Coin() {
     coin.push(
       <CoinList
         key={key}
-        price={formatter.format(value.usd)}
+        price={formatCoin(8).format(value.usd)}
         name={key}
         number={count}
       />,
@@ -37,13 +37,13 @@ export default function Coin() {
         <img src={`${process.env.PUBLIC_URL}/img/logo.png`} alt="Logo Img" className="w-50 p-3" />
         <div className="p-3">
           <h1 className="fw-bold rs-f text-uppercase">Total 24h Vol</h1>
-          <h3 className="rs-f3">{formatter.format(cap)}</h3>
+          <h3 className="rs-f3">{formatCoin(2).format(cap)}</h3>
         </div>
       </header>
       <div className="articleHeader p-1 w-100">
         <p className="m-0">COIN DETAILS</p>
       </div>
-      <article className="coinsContainer">
+      <article data-testid="list-container" className="coinsContainer">
         {coin}
       </article>
     </main>
