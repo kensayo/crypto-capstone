@@ -1,0 +1,18 @@
+header {
+  background: #fd5294;
+}
+
+.coinsContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto;
+}
+
+.articleHeader {
+  background: #cf4579;
+  height: auto;
+}
+
+.coindetaillogo {
+  width: 40%;
+}
